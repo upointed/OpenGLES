@@ -40,6 +40,8 @@ static const SceneVertex vertices[] =
 {
    [super viewDidLoad];
    
+    
+    NSLog(@"path : %@",NSHomeDirectory());
    // Verify the type of view created automatically by the
    // Interface Builder storyboard
    GLKView *view = (GLKView *)self.view;
