@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:PVRTextureLoader/PVRTextureLoader.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGLES_Ch3_6/OpenGLES_Ch3_6.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGLES_Ch3_5/OpenGLES_Ch3_5.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGLES_Ch3_4/OpenGLES_Ch3_4.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGLES_Ch3_3/OpenGLES_Ch3_3.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGLES_Ch3_2/OpenGLES_Ch3_2.xcodeproj">
+   </FileRef>
+</Workspace>

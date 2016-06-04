@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:OpenGLES_Ch2_3/OpenGLES_Ch2_3.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGLES_Ch2_2/OpenGLES_Ch2_2.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGLES_Ch2_1/OpenGLES_Ch2_1.xcodeproj">
+   </FileRef>
+</Workspace>
