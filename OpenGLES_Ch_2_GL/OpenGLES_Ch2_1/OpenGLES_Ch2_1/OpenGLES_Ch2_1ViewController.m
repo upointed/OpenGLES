@@ -160,6 +160,12 @@ static const SceneVertex vertices[] =
       3); // Use three vertices from currently bound buffer
 }
 
+//一秒钟30次
+- (void)update{
+    static int count = 0;
+    NSLog(@"%d",count++);
+}
+
 
 /////////////////////////////////////////////////////////////////
 // Called when the view controller's view has been unloaded
