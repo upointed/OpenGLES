@@ -93,7 +93,7 @@ static const GLKVector4 light2Position =
    self.baseEffect.lightModelAmbientColor = 
          GLKVector4Make(0.4f, 0.4f, 0.4f, 1.0f);
     
-    //锯尺
+    
     self.baseEffect.lightingType = GLKLightingTypePerVertex;
     
    // Light 0 is a spot light

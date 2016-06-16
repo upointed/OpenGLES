@@ -487,41 +487,41 @@ enum
    
    // Get uniform locations.
    _uniforms[AGLKModelviewMatrix] = glGetUniformLocation(_program, "u_modelviewMatrix");
-   _uniforms[AGLKMVPMatrix] = glGetUniformLocation(_program, 
+   _uniforms[AGLKMVPMatrix]       = glGetUniformLocation(_program,
       "u_mvpMatrix");
-   _uniforms[AGLKNormalMatrix] = glGetUniformLocation(_program, 
+   _uniforms[AGLKNormalMatrix]    = glGetUniformLocation(_program,
       "u_normalMatrix");
-   _uniforms[AGLKTex0Matrix] = glGetUniformLocation(_program, 
+   _uniforms[AGLKTex0Matrix]      = glGetUniformLocation(_program,
       "u_tex0Matrix");
-   _uniforms[AGLKTex1Matrix] = glGetUniformLocation(_program, 
+   _uniforms[AGLKTex1Matrix]      = glGetUniformLocation(_program,
       "u_tex1Matrix");
-   _uniforms[AGLKSamplers] = glGetUniformLocation(_program, 
+   _uniforms[AGLKSamplers]        = glGetUniformLocation(_program,
       "u_unit2d");
-   _uniforms[AGLKTex0Enabled] = glGetUniformLocation(_program, 
+   _uniforms[AGLKTex0Enabled]     = glGetUniformLocation(_program,
       "u_tex0Enabled");
-   _uniforms[AGLKTex1Enabled] = glGetUniformLocation(_program, 
+   _uniforms[AGLKTex1Enabled]     = glGetUniformLocation(_program,
       "u_tex1Enabled");
-   _uniforms[AGLKGlobalAmbient] = glGetUniformLocation(_program, 
+   _uniforms[AGLKGlobalAmbient]   = glGetUniformLocation(_program,
       "u_globalAmbient");
-   _uniforms[AGLKLight0Pos] = glGetUniformLocation(_program, 
+   _uniforms[AGLKLight0Pos]       = glGetUniformLocation(_program,
       "u_light0EyePos");
    _uniforms[AGLKLight0Direction] = glGetUniformLocation(_program, "u_light0NormalEyeDirection");
-   _uniforms[AGLKLight0Diffuse] = glGetUniformLocation(_program, 
+   _uniforms[AGLKLight0Diffuse]   = glGetUniformLocation(_program,
       "u_light0Diffuse");
-   _uniforms[AGLKLight0Cutoff] = glGetUniformLocation(_program, 
+   _uniforms[AGLKLight0Cutoff]    = glGetUniformLocation(_program,
       "u_light0Cutoff");
-   _uniforms[AGLKLight0Exponent] = glGetUniformLocation(_program, "u_light0Exponent");
-   _uniforms[AGLKLight1Pos] = glGetUniformLocation(_program, 
+   _uniforms[AGLKLight0Exponent]  = glGetUniformLocation(_program, "u_light0Exponent");
+   _uniforms[AGLKLight1Pos]       = glGetUniformLocation(_program,
       "u_light1EyePos");
    _uniforms[AGLKLight1Direction] = glGetUniformLocation(_program, "u_light1NormalEyeDirection");
-   _uniforms[AGLKLight1Diffuse] = glGetUniformLocation(_program, 
+   _uniforms[AGLKLight1Diffuse]   = glGetUniformLocation(_program,
       "u_light1Diffuse");
-   _uniforms[AGLKLight1Cutoff] = glGetUniformLocation(_program, 
+   _uniforms[AGLKLight1Cutoff]    = glGetUniformLocation(_program,
       "u_light1Cutoff");
-   _uniforms[AGLKLight1Exponent] = glGetUniformLocation(_program, "u_light1Exponent");
-   _uniforms[AGLKLight2Pos] = glGetUniformLocation(_program, 
+   _uniforms[AGLKLight1Exponent]  = glGetUniformLocation(_program, "u_light1Exponent");
+   _uniforms[AGLKLight2Pos]       = glGetUniformLocation(_program,
       "u_light2EyePos");
-   _uniforms[AGLKLight2Diffuse] = glGetUniformLocation(_program, 
+   _uniforms[AGLKLight2Diffuse]   = glGetUniformLocation(_program,
       "u_light2Diffuse");
    
    // Delete vertex and fragment shaders.
