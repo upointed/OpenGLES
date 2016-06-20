@@ -97,7 +97,7 @@
    // The model manager loads models and sends the data to GPU.
    // Each loaded model can be accesssed by name.
    NSString *modelsPath = [[NSBundle mainBundle] pathForResource:
-      @"bumper" ofType:@"modelplist"];
+      @"bumper" ofType:@"plist"];
    self.modelManager = 
       [[UtilityModelManager alloc] initWithModelPath:modelsPath];
    
@@ -193,6 +193,7 @@
    
    // Cull back faces: Important! many Sketchup models have back 
    // faces that cause Z fighting if back faces are not culled.
+    //开启了背面剔除，避免 Z 冲突
    [((AGLKContext *)view.context) enable:GL_CULL_FACE];
    
    // Calculate the aspect ratio for the scene and setup a 

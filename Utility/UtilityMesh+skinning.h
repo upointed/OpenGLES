@@ -12,7 +12,7 @@ typedef struct
    GLKVector4 jointIndices; // encoded float for Shading Language
    GLKVector4 jointWeights; // weight factor for each joint index
 } 
-UtilityMeshJointInfluence;
+UtilityMeshJointInfluence;//关节索引和权重
 
 
 @interface UtilityMesh (skinning)

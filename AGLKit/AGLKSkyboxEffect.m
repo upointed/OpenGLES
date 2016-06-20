@@ -135,73 +135,75 @@ enum
 
 
 /////////////////////////////////////////////////////////////////
-//  
+//  6月20日改
 - (void)prepareToDraw
 {
    if(0 == program)
    {
-      [self loadShaders];
+       [self loadShaders];
    }
    
    if(0 != program)
    {
-      glUseProgram(program);                    // Step 1
-   
-      // Translate skybox cube to specified center and scale to 
-      // specified size
-      GLKMatrix4 skyboxModelView = GLKMatrix4Translate(
-         self.transform.modelviewMatrix,
-         self.center.x, self.center.y, self.center.z);
-      skyboxModelView = GLKMatrix4Scale(
-         skyboxModelView,
-         self.xSize, self.ySize, self.zSize);
-           
-      // Pre-calculate the combined mvpMatrix
-      GLKMatrix4 modelViewProjectionMatrix = GLKMatrix4Multiply(
-         self.transform.projectionMatrix, 
-         skyboxModelView);
-         
-      // Set the mvp matrix uniform variable
-      glUniformMatrix4fv(uniforms[AGLKMVPMatrix], 1, 0, 
-         modelViewProjectionMatrix.m);           // Step 2
-
-      // One texture sampler uniform variable
-      glUniform1i(uniforms[AGLKSamplersCube], 0);// Step 2
-
-      if(0 == vertexArrayID)
-      {  // Set vertex attribute pointers
-         glGenVertexArrays(1, &vertexArrayID);
-         glBindVertexArray(vertexArrayID);      
-
-         glEnableVertexAttribArray(GLKVertexAttribPosition);
-         glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
-         glVertexAttribPointer(GLKVertexAttribPosition, 
-            3, 
-            GL_FLOAT, 
-            GL_FALSE, 
-            0, 
-            NULL);                               // Step 3
-      }
-      else
-      {  // The following function call restores all of the
-         // vertex attribute pointers previously prepared and 
-         // associated with vertexArrayID
-         glBindVertexArray(vertexArrayID);      
-      }
-      
-      glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
-
-      // Bind the texture to be used
-      if(self.textureCubeMap.enabled)
-      {
-         glBindTexture(GL_TEXTURE_CUBE_MAP, 
-            self.textureCubeMap.name);           // Step 4
-      }
-      else
-      {
-         glBindTexture(GL_TEXTURE_CUBE_MAP, 0);  // Step 4
-      }
+       [self useShaders];
    }
+}
+
+- (void)useShaders
+{
+    glUseProgram(program);                    // Step 1
+    
+    // Translate skybox cube to specified center and scale to
+    // specified size
+    GLKMatrix4 skyboxModelView = GLKMatrix4Translate(self.transform.modelviewMatrix,
+                                                     self.center.x, self.center.y, self.center.z);
+    skyboxModelView = GLKMatrix4Scale(skyboxModelView,
+                                      self.xSize, self.ySize, self.zSize);
+    
+    // Pre-calculate the combined mvpMatrix
+    GLKMatrix4 modelViewProjectionMatrix = GLKMatrix4Multiply(self.transform.projectionMatrix,
+                                                              skyboxModelView);
+    
+    // Set the mvp matrix uniform variable
+    glUniformMatrix4fv(uniforms[AGLKMVPMatrix], 1, 0,
+                       modelViewProjectionMatrix.m);           // Step 2
+    
+    // One texture sampler uniform variable
+    glUniform1i(uniforms[AGLKSamplersCube], 0);// Step 2
+    
+    if(0 == vertexArrayID)
+    {  // Set vertex attribute pointers
+        glGenVertexArrays(1, &vertexArrayID);
+        glBindVertexArray(vertexArrayID);
+        
+        glEnableVertexAttribArray(GLKVertexAttribPosition);
+        glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
+        glVertexAttribPointer(GLKVertexAttribPosition,
+                              3,
+                              GL_FLOAT,
+                              GL_FALSE,
+                              0,
+                              NULL);                               // Step 3
+    }
+    else
+    {  // The following function call restores all of the
+        // vertex attribute pointers previously prepared and
+        // associated with vertexArrayID
+        glBindVertexArray(vertexArrayID);
+    }
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
+    
+    // Bind the texture to be used
+    if(self.textureCubeMap.enabled)
+    {
+        glBindTexture(GL_TEXTURE_CUBE_MAP, 
+                      self.textureCubeMap.name);           // Step 4
+    }
+    else
+    {
+        glBindTexture(GL_TEXTURE_CUBE_MAP, 0);  // Step 4
+    }
 }
 
 

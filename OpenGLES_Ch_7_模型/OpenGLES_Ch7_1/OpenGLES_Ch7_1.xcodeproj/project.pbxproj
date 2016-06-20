@@ -32,6 +32,7 @@
 		03F18B2514057D4F00C20098 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F18B2214057D4F00C20098 /* GLKit.framework */; };
 		03F18B2A14057DE000C20098 /* AGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F18B2714057DE000C20098 /* AGLKContext.m */; };
 		63A1445B152E39ED00D00DE0 /* bumper.modelplist in Resources */ = {isa = PBXBuildFile; fileRef = 63A1445A152E39ED00D00DE0 /* bumper.modelplist */; };
+		BB12CC9F1D13822100563F21 /* bumper.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB12CC9E1D13822100563F21 /* bumper.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		03F18B2614057DE000C20098 /* AGLKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKContext.h; sourceTree = "<group>"; };
 		03F18B2714057DE000C20098 /* AGLKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKContext.m; sourceTree = "<group>"; };
 		63A1445A152E39ED00D00DE0 /* bumper.modelplist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = bumper.modelplist; path = ../../Resources/bumper.modelplist; sourceTree = "<group>"; };
+		BB12CC9E1D13822100563F21 /* bumper.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = bumper.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		03F18AFD14057D0B00C20098 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BB12CC9E1D13822100563F21 /* bumper.plist */,
 				03F18B0514057D0B00C20098 /* OpenGLES_Ch7_1AppDelegate.h */,
 				03F18B0614057D0B00C20098 /* OpenGLES_Ch7_1AppDelegate.m */,
 				03F18B0814057D0B00C20098 /* MainStoryboard_iPhone.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F18B0114057D0B00C20098 /* InfoPlist.strings in Resources */,
+				BB12CC9F1D13822100563F21 /* bumper.plist in Resources */,
 				03F18B0A14057D0B00C20098 /* MainStoryboard_iPhone.storyboard in Resources */,
 				03F18B0D14057D0B00C20098 /* MainStoryboard_iPad.storyboard in Resources */,
 				63A1445B152E39ED00D00DE0 /* bumper.modelplist in Resources */,

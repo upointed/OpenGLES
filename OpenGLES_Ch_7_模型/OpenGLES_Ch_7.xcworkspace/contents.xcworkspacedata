@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OpenGLES_Ch7_3/OpenGLES_Ch7_3.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGLES_Ch7_2/OpenGLES_Ch7_2.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OpenGLES_Ch7_1/OpenGLES_Ch7_1.xcodeproj">
    </FileRef>
    <FileRef

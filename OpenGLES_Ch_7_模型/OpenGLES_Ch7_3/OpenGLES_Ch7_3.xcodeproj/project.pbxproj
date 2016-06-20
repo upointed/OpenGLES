@@ -160,10 +160,6 @@
 				037A55681529063E0072DF08 /* UtilityModel+skinning.h */,
 				037A55691529063F0072DF08 /* UtilityModel+skinning.m */,
 				037A55611529052C0072DF08 /* Model Loading */,
-				03501904141BE85400BF3FF2 /* OpenGLES_Ch7_3AppDelegate.h */,
-				03501905141BE85400BF3FF2 /* OpenGLES_Ch7_3AppDelegate.m */,
-				03501907141BE85400BF3FF2 /* MainStoryboard_iPhone.storyboard */,
-				0350190A141BE85400BF3FF2 /* MainStoryboard_iPad.storyboard */,
 				0350190D141BE85400BF3FF2 /* OpenGLES_Ch7_3ViewController.h */,
 				0350190E141BE85400BF3FF2 /* OpenGLES_Ch7_3ViewController.m */,
 				035018FC141BE85400BF3FF2 /* Supporting Files */,
@@ -174,6 +170,10 @@
 		035018FC141BE85400BF3FF2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03501904141BE85400BF3FF2 /* OpenGLES_Ch7_3AppDelegate.h */,
+				03501905141BE85400BF3FF2 /* OpenGLES_Ch7_3AppDelegate.m */,
+				03501907141BE85400BF3FF2 /* MainStoryboard_iPhone.storyboard */,
+				0350190A141BE85400BF3FF2 /* MainStoryboard_iPad.storyboard */,
 				038AA28F1641DDCA00BC6695 /* Default-568h@2x.png */,
 				038AA2901641DDCA00BC6695 /* OpenGL_ES_for_iOS_57x57.png */,
 				038AA2911641DDCA00BC6695 /* OpenGL_ES_for_iOS_72x72.png */,
