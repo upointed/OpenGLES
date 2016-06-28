@@ -136,7 +136,7 @@ static const GLfloat OpenGLES_Ch12_1DefaultFarLimit =
    // Make the new context current
    [EAGLContext setCurrentContext:glView.context];
    
-   // init seldom changing context state 
+   // init seldom changing context state
    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
    glEnable(GL_DEPTH_TEST);
    glEnable(GL_CULL_FACE);

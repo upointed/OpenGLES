@@ -10,7 +10,7 @@
 // This function returns YES if both p1 and p2 are on the same 
 // side of the line defined by a and b.
 BOOL AGLKPointsAreOnSameSideOfLine(
-   GLKVector3 p1, 
+   GLKVector3 p1,
    GLKVector3 p2, 
    GLKVector3 a, 
    GLKVector3 b)
